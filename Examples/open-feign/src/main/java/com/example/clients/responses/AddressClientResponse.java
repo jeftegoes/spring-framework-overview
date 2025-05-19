@@ -1,9 +1,9 @@
-package com.example.responses;
+package com.example.clients.responses;
 
 import lombok.Data;
 
 @Data
-public class AddressResponse {
+public class AddressClientResponse {
     private String cep;
     private String logradouro;
     private String complemento;
