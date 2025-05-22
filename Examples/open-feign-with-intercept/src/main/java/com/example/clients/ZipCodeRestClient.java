@@ -1,7 +1,7 @@
 package com.example.clients;
 
 import com.example.clients.responses.AddressClientResponse;
-import com.example.interceptors.ClientHttpRequestInterceptor;
+import com.example.interceptors.RestClientLoggingInterceptor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -9,11 +9,11 @@ import org.springframework.web.client.RestClient;
 
 @Component
 public class ZipCodeRestClient {
-    private final ClientHttpRequestInterceptor interceptor;
+    private final RestClientLoggingInterceptor interceptor;
     @Value("${zipcode.client.url}")
     private String baseUrl;
 
-    public ZipCodeRestClient(ClientHttpRequestInterceptor interceptor) {
+    public ZipCodeRestClient(RestClientLoggingInterceptor interceptor) {
         this.interceptor = interceptor;
     }
 

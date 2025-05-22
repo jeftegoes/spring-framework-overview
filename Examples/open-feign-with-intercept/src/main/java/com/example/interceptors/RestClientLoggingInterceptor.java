@@ -17,7 +17,7 @@ import java.util.UUID;
 
 @Slf4j
 @Component
-public class ClientHttpRequestInterceptor implements org.springframework.http.client.ClientHttpRequestInterceptor {
+public class RestClientLoggingInterceptor implements org.springframework.http.client.ClientHttpRequestInterceptor {
     @Value("${spring.application.name}")
     private String applicationName;
 
