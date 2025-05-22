@@ -1,4 +1,4 @@
-package com.example.interceptors;
+package com.example.utils;
 
 import lombok.Data;
 
@@ -18,4 +18,5 @@ public class LogStructure {
     private int statusCode;
     private String response;
     private String timeSpent;
+    private String stackTrace;
 }

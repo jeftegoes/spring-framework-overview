@@ -1,6 +1,6 @@
-package com.example.intercept_http_request_response.config;
+package com.example.config;
 
-import com.example.intercept_http_request_response.handlers.LoggingInterceptor;
+import com.example.handlers.LoggingInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;

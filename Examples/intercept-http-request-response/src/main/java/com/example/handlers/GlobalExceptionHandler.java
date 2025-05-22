@@ -1,4 +1,4 @@
-package com.example.intercept_http_request_response.handlers;
+package com.example.handlers;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
